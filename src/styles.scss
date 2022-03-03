@@ -28,6 +28,7 @@ body{
     color: #FA2759;
     text-decoration: none;
     font-weight: bold;
+    margin: 32px;
 
     &:hover{
         background-color: #FA2759;
@@ -35,3 +36,13 @@ body{
     }
 }
 /* ==== Button designs END = */
+
+/* Scroll down Arrow */
+
+.scroll-down-arrow{
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 50px);
+    background-color: white;
+    border-radius: 100%;
+}

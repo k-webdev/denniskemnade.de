@@ -11,6 +11,34 @@ body{
 }
 
 .container-landing{
-    padding-top: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
     background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        font-weight: 600;
+        font-size: 80px;
+        color: white;
+        margin: 0;
+    }
+}
+
+.landing-left{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.landing-img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: 50%50%;
+    border-radius: 100%;
+
 }
