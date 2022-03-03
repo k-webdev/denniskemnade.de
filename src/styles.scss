@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+/* ==== Button designes ==== */
+.btn-primary-default{
+    border: 2px #2DFCD8 solid;
+    border-radius: 3px;
+    padding: 4px 16px 4px 16px;
+    color: #2DFCD8;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover{
+        background-color: #2DFCD8;
+        color: white;
+    }
+}
+
+.btn-secondary-default{
+    border: 2px #FA2759 solid;
+    border-radius: 3px;
+    padding: 4px 16px 4px 16px;
+    color: #FA2759;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover{
+        background-color: #FA2759;
+        color: white;
+    }
+}
+/* ==== Button designs END = */
