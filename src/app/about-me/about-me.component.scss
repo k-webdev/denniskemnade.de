@@ -1,18 +1,21 @@
-
-.about-me-body-sort{
+.about-me-body-sort {
     width: 100%;
-    min-height: 100vh;
+    min-height: 750px;
     background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.left-about-me{
-    padding: 50px 0 50px 0;
+.left-about-me {
+    padding: 50px 120px 50px 120px;
+    width: calc(100% - 480px);
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: solid 2px #2dfcd8;
     text-align: center;
-    img{
+    img {
         margin-right: 32px;
         border-radius: 100%;
         height: 200px;
@@ -20,48 +23,48 @@
         object-fit: cover;
     }
 
-    p, h3{
+    p,
+    h3 {
         color: white;
         margin-left: 32px;
     }
 }
 
-.h3-size{
+.h3-size {
     font-size: 32px;
 }
 
-.about-me-sort-elements{
-    width: 100%;
+.about-me-sort-elements {
+    width: calc(100% - 240px);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 120px 0 120px;
 }
 
-.background-about-me-sort{
+.background-about-me-sort {
     width: 200px;
     height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 100px 32px 0 32px;
+    margin-top: 100px;
 }
 
-.img-background{
+.img-background {
     background-color: #2dfcd8;
     border-radius: 100%;
 
-    img{
+    img {
         padding: 25px;
         width: 50px;
         height: 50px;
     }
 }
 
-.content-about-me{
-
-
-
-    h4, span{
+.content-about-me {
+    h4,
+    span {
         color: white;
     }
 }

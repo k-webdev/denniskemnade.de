@@ -42,7 +42,7 @@ body {
 }
 
 .rect {
-    width: 350px;
+    width: 600px;
     height: 350px;
     background-color: white;
     margin: 16px;
@@ -57,7 +57,7 @@ body {
 .rect-addon{
     background-image: url('/assets/img/EPL.png');
     
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
@@ -67,10 +67,32 @@ body {
 }
 
 .El-Pollo-Loco-rect{
-    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    a{
+        width: fit-content;
+        margin: 90px 0 130px 0;
+    }
+
+    p{
+        margin: 0;
+        font-size: 21px;
+        font-weight: bold;
+    }
 
 
     h3{
+        font-size: 32px;
         color: #FA2759;
+        margin: 0 0 16px 0;
     }
 }
