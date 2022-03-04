@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: solid 2px #2dfcd8;
+    text-align: center;
     img{
         margin-right: 32px;
         border-radius: 100%;
@@ -23,6 +24,10 @@
         color: white;
         margin-left: 32px;
     }
+}
+
+.h3-size{
+    font-size: 32px;
 }
 
 .about-me-sort-elements{
