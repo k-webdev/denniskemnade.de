@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.spotlight-galery-background {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.headline-my-work{
+   
+
+    h2{
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+}
+
+.spotlight-galery-top-sort {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-sort{
+    margin-top: 32px;
+}
+
+.rect-sort-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rect-sort {
+    display: flex;
+}
+
+.rect {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    margin: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.rect-addon{
+    background-image: url('/assets/img/EPL.png');
+    
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &:hover{
+        
+    }
+}
+
+.El-Pollo-Loco-rect{
+    
+
+
+    h3{
+        color: #FA2759;
+    }
+}
