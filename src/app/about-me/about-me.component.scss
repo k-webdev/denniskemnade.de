@@ -1,0 +1,62 @@
+
+.about-me-body-sort{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.left-about-me{
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #2dfcd8;
+    img{
+        margin-right: 32px;
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    p, h3{
+        color: white;
+        margin-left: 32px;
+    }
+}
+
+.about-me-sort-elements{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.background-about-me-sort{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 100px 32px 0 32px;
+}
+
+.img-background{
+    background-color: #2dfcd8;
+    border-radius: 100%;
+
+    img{
+        padding: 25px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.content-about-me{
+
+
+
+    h4, span{
+        color: white;
+    }
+}

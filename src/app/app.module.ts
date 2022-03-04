@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { LandingComponent } from './landing/landing.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MyWorkComponent } from './my-work/my-work.component';
     MenuComponent,
     LandingComponent,
     SkillsComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    AboutMeComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
