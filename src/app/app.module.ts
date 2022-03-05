@@ -12,6 +12,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     ContactFormComponent,
     FooterComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,

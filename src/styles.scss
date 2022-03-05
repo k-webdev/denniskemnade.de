@@ -60,12 +60,22 @@ body{
 }
 /* ==== Button designs END = */
 
-/* Scroll down Arrow */
+/* Scroll UP Arrow */
 
-.scroll-down-arrow{
-    position: absolute;
-    bottom: 30px;
-    left: calc(50% - 50px);
-    background-color: white;
-    border-radius: 100%;
+.space{
+  height: 200px;
+  background-color: red;
+}
+
+.back-to-top{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  background-color: #2DFCD8;
+  width: 50px;
+  height: 50px;
+  border: white;
+  border-radius: 100%;
+  transform: rotate(180deg);
 }
