@@ -68,3 +68,38 @@
         color: white;
     }
 }
+
+@media(max-width: 1115px){
+
+    .left-about-me{
+        flex-direction: column;
+        text-align: center;
+
+        h3, p{
+            margin: 32px 0 0 0;
+        }
+    }
+
+    .about-me-body-sort{
+        height: 2000px;
+    }
+
+    .background-about-me-sort{
+        margin-bottom: 100px;
+    }
+
+    .about-me-sort-elements{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+}
+
+@media(max-width: 900px){
+
+    .about-me-body-sort{
+        height: 2300px;
+    }
+
+}

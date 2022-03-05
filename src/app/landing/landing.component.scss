@@ -1,3 +1,4 @@
+/* Landing =============================== */
 body{
     margin: 0;
 }
@@ -43,3 +44,352 @@ body{
     border-radius: 100%;
 
 }
+
+/* end landing ========= */
+
+/*  my skills */
+
+.skills-background{
+    background-color: #1A1A1A;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline-skills{
+    h2{
+        color: white;
+        font-size: 48px;
+        margin: 32px 0 0 0;
+    }
+}
+
+.skill-sort-lines{
+    display: flex;
+    justify-content: center;
+}
+
+.sort-text-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body-img{
+    position: relative;
+    top: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: rgba(0, 0, 0, 0.3) 1px solid;
+    border-radius: 100%;
+
+    img{
+        background-color: white;
+        width: 50px;
+        object-fit: contain;
+    }
+}
+
+.card-body-text{
+    margin: 16px 32px 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    width: 225px;
+    height: 125px;
+    border-radius: 8px;
+    padding-bottom: 32px;
+    p{
+        font-size: 21px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+/* end my skills */
+
+/* my work */
+
+body {
+    margin: 0;
+}
+
+.spotlight-galery-background {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.headline-my-work{
+   
+
+    h2{
+        color: white;
+        margin: 0;
+        font-size: 50px;
+    }
+}
+
+.spotlight-galery-top-sort {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-sort{
+    margin-top: 32px;
+}
+
+.rect-sort-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rect-sort {
+    display: flex;
+}
+
+.rect {
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    margin: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.rect-addon{
+    background-image: url('/assets/img/EPL.png');
+    
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &:hover{
+        
+    }
+}
+
+.El-Pollo-Loco-rect{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    a{
+        width: fit-content;
+        margin: 90px 0 130px 0;
+    }
+
+    p{
+        margin: 0;
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+
+    h3{
+        font-size: 32px;
+        color: #FA2759;
+        margin: 0 0 16px 0;
+    }
+}
+
+@media(max-width: 1515px){
+    .rect-sort{
+        flex-direction: column;
+    }
+}
+
+/* end my work */
+
+/* about me */
+
+.about-me-body-sort {
+    width: 100%;
+    min-height: 750px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-about-me {
+    padding: 50px 120px 50px 120px;
+    width: calc(100% - 480px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #2dfcd8;
+    text-align: center;
+    img {
+        margin-right: 32px;
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    p,
+    h3 {
+        color: white;
+        margin-left: 32px;
+    }
+}
+
+.h3-size {
+    font-size: 32px;
+}
+
+.about-me-sort-elements {
+    width: calc(100% - 240px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px 0 120px;
+}
+
+.background-about-me-sort {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.img-background {
+    background-color: #2dfcd8;
+    border-radius: 100%;
+
+    img {
+        padding: 25px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.content-about-me {
+    h4,
+    span {
+        color: white;
+    }
+}
+
+@media(max-width: 1115px){
+
+    .left-about-me{
+        flex-direction: column;
+        text-align: center;
+
+        h3, p{
+            margin: 32px 0 0 0;
+        }
+    }
+
+    .about-me-body-sort{
+        height: 2000px;
+    }
+
+    .background-about-me-sort{
+        margin-bottom: 100px;
+    }
+
+    .about-me-sort-elements{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+}
+
+@media(max-width: 900px){
+
+    .about-me-body-sort{
+        height: 2300px;
+    }
+
+}
+
+/* end about me */
+
+/* contact form */
+
+form {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+        color: white;
+        width: 800px;
+        background-color: #1a1a1a;
+        border: none;
+        border-radius: 3px;
+        padding: 8px;
+        resize: none;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    a {
+        margin: 16px 0 0 0;
+        width: fit-content;
+    }
+}
+
+.headline-positions{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-background-sort {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0;
+
+    h2{
+        color: #2DFCD8;
+        font-size: 50px;
+    }
+    p {
+        color: white;
+    }
+}
+
+.btn-sort{
+    width: 800px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+/* end contact form */
