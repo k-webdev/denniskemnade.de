@@ -248,15 +248,16 @@
     </div>
 
 
-    <form action="">
+    <form action="http://dennis-kemnade.developerakademie.net/denniskemnade/send_mail.php">
         <p>Name</p>
-        <input placeholder="Enter your name" type="text">
+        <input placeholder="Enter your name" name="name" type="text">
         <p>Email adress</p>
-        <input placeholder="Enter your Email adress" type="text">
+        <input placeholder="Enter your Email adress" type="email">
         <p>Message</p>
-        <textarea placeholder="Enter your message" name="" id="" cols="30" rows="10"></textarea>
+        <textarea placeholder="Enter your message" name="message" id="" cols="30" rows="10"></textarea>
         <div class="btn-sort">
-            <a class="btn-primary-default" href="#">Send</a>
+            <button class="btn-primary-default-real-btn" type="submit">Send</button>
+            <!-- <a class="btn-primary-default" type="submit" href="#">Send</a> -->
         </div>
     </form>
 </div>

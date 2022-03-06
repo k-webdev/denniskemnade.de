@@ -32,3 +32,14 @@ footer{
 .home-img{
     cursor: pointer;
 }
+
+@media(max-width: 945px){
+
+    footer{
+        width: 100%;
+        height: fit-content;
+        padding: 50px 0 25px 0;
+        flex-direction: column;
+    }
+
+}

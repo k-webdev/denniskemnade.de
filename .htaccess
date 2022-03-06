@@ -1,11 +1,11 @@
 RewriteEngine On
 
-RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_FILENAME} -s [OR]
 
-RewriteRule ^(.*)$ https://www.dein-server.com/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
 
-RewriteCond %{HTTP_HOST} ^stefan-moldoveanu\.com [NC]
+RewriteCond %{REQUEST_FILENAME} -d
 
-RewriteCond %{SERVER_PORT} 80
+RewriteRule ^.*$ - [NC,L]
 
-RewriteRule ^(.*)$ https://www.dein-server.com/$1 [R,L]
+RewriteRule ^(.*) /denniskemnade/index.html [NC,L]

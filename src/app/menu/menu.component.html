@@ -1,7 +1,15 @@
 <header id="header">
-    <img routerLink="/" src="./assets/img/logo-me.png" alt="">
+    <img class="img-logo" routerLink="/" src="./assets/img/logo-me.png" alt="">
 
-    <div class="">
+    <div class="wide-menu">
+        <a class="home-button" routerLink="/">Home</a>
+        <a href="#">Curriculum</a>
+        <a href="#my-work">Projects</a>
+    </div>
+
+    <img (click)="openCloseMenu()" id="mobile-menu-btn" class="mobile-menu-design" src="./assets/img/menu.png" alt="">
+
+    <div *ngIf="!openCloseCounter" class="mobile-menu-background-design">
         <a class="home-button" routerLink="/">Home</a>
         <a href="#">Curriculum</a>
         <a href="#my-work">Projects</a>

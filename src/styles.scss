@@ -30,7 +30,7 @@ body{
 }
 
 /* ==== Button designes ==== */
-.btn-primary-default{
+.btn-primary-default{/* for links */
     border: 2px #2DFCD8 solid;
     border-radius: 3px;
     padding: 8px 32px 8px 32px;
@@ -57,6 +57,22 @@ body{
         background-color: #FA2759;
         color: white;
     }
+}
+
+.btn-primary-default-real-btn{
+  cursor: pointer;
+  background-color: black;
+  border: 2px #2DFCD8 solid;
+  border-radius: 3px;
+  padding: 8px 32px 8px 32px;
+  color: #2DFCD8;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover{
+      background-color: #2DFCD8;
+      color: white;
+  }
 }
 /* ==== Button designs END = */
 
