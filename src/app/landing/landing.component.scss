@@ -1,17 +1,17 @@
 /* Landing =============================== */
-body{
+body {
     margin: 0;
 }
 
-.colored-letter{
-    color: #2DFCD8;
+.colored-letter {
+    color: #2dfcd8;
 }
 
-.colored-name{
-    color: #FA2759;
+.colored-name {
+    color: #fa2759;
 }
 
-.container-landing{
+.container-landing {
     padding-left: 120px;
     padding-right: 120px;
     background-color: black;
@@ -20,7 +20,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    p{
+    p {
         font-weight: 600;
         font-size: 80px;
         color: white;
@@ -28,7 +28,7 @@ body{
     }
 }
 
-.landing-left{
+.landing-left {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,21 +36,20 @@ body{
     align-items: flex-start;
 }
 
-.landing-img{
+.landing-img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     object-position: 50%50%;
     border-radius: 100%;
-
 }
 
 /* end landing ========= */
 
 /*  my skills */
 
-.skills-background{
-    background-color: #1A1A1A;
+.skills-background {
+    background-color: #1a1a1a;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -58,26 +57,26 @@ body{
     align-items: center;
 }
 
-.headline-skills{
-    h2{
+.headline-skills {
+    h2 {
         color: white;
         font-size: 48px;
         margin: 32px 0 0 0;
     }
 }
 
-.skill-sort-lines{
+.skill-sort-lines {
     display: flex;
     justify-content: center;
 }
 
-.sort-text-img{
+.sort-text-img {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card-body-img{
+.card-body-img {
     position: relative;
     top: 60px;
     background-color: white;
@@ -89,14 +88,14 @@ body{
     border: rgba(0, 0, 0, 0.3) 1px solid;
     border-radius: 100%;
 
-    img{
+    img {
         background-color: white;
         width: 50px;
         object-fit: contain;
     }
 }
 
-.card-body-text{
+.card-body-text {
     margin: 16px 32px 16px 32px;
     display: flex;
     justify-content: center;
@@ -106,13 +105,12 @@ body{
     height: 125px;
     border-radius: 8px;
     padding-bottom: 32px;
-    p{
+    p {
         font-size: 21px;
         font-weight: bold;
         text-align: center;
     }
 }
-
 
 /* end my skills */
 
@@ -128,10 +126,8 @@ body {
     min-height: 100vh;
 }
 
-.headline-my-work{
-   
-
-    h2{
+.headline-my-work {
+    h2 {
         color: white;
         margin: 0;
         font-size: 50px;
@@ -147,7 +143,7 @@ body {
     justify-content: center;
 }
 
-.button-sort{
+.button-sort {
     margin-top: 32px;
 }
 
@@ -172,21 +168,55 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+    /* box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.2); */
+    border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.rect-addon{
-    background-image: url('/assets/img/EPL.png');
-    
+.rect-addon-pollo {
+    background-image: url("/assets/img/EPL.png");
+
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
 
-    &:hover{
-        
+.rect-addon-poke {
+    background-image: url("/assets/img/poke.png");
+
+    background-size: cover;
+    background-position: 60% 60%;
+    background-repeat: no-repeat;
+}
+
+
+.pokedex-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    a {
+        width: fit-content;
+        margin: 0 16px 0 16px;
+    }
+
+    p {
+        color: white;
+        margin: 0 0 32px 16px;
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 32px;
+        color: #fa2759;
+        margin: 16px 0 16px 16px;
     }
 }
 
-.El-Pollo-Loco-rect{
+.El-Pollo-Loco-rect {
     width: 100%;
     height: 100%;
     display: flex;
@@ -194,31 +224,103 @@ body {
     justify-content: center;
     align-items: center;
 
-    &:hover{
+    &:hover {
         background-color: rgba(255, 255, 255, 0.5);
     }
 
-    a{
+    a {
         width: fit-content;
-        margin: 90px 0 130px 0;
+        margin: 0 16px 0 16px;
     }
 
-    p{
+    p {
         margin: 0;
         font-size: 21px;
         font-weight: bold;
+        margin-bottom: 210px;
     }
 
-
-    h3{
+    h3 {
         font-size: 32px;
-        color: #FA2759;
+        color: #fa2759;
         margin: 0 0 16px 0;
     }
 }
 
-@media(max-width: 1515px){
-    .rect-sort{
+.rect-addon-web {
+    background-image: url("/assets/img/PF.png");
+
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.web-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        width: fit-content;
+        margin: 0 0 0 0;
+    }
+
+    p {
+        color: white;
+        padding: 0 0 132px 0;
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 32px;
+        color: #fa2759;
+        margin: 0 0 16px 0;
+    }
+}
+
+.rect-addon-quiz {
+    background-image: url("/assets/img/quiz.jpg");
+
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.quiz-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    a {
+        width: fit-content;
+        margin: 0 16px 0 16px;
+    }
+
+    p {
+        padding: 0 0 132px 0;
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 32px;
+        color: #fa2759;
+        margin: 0 0 16px 0;
+    }
+}
+
+@media (max-width: 1515px) {
+    .rect-sort {
         flex-direction: column;
     }
 }
@@ -229,7 +331,7 @@ body {
 
 .about-me-body-sort {
     width: 100%;
-    min-height: 750px;
+    min-height: 1100px;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
@@ -292,165 +394,159 @@ body {
 }
 
 .content-about-me {
-    h4,
-    span {
+    h4{
         color: white;
     }
 }
 
-@media(max-width: 1115px){
+.about-me-text-design{
+    color: white;
+    height: fit-content;
+}
 
-    .left-about-me{
+@media (max-width: 1115px) {
+    .left-about-me {
         flex-direction: column;
         text-align: center;
 
-        h3, p{
+        h3,
+        p {
             margin: 32px 0 0 0;
         }
     }
 
-    .about-me-body-sort{
+    .about-me-body-sort {
         height: 2000px;
     }
 
-    .background-about-me-sort{
+    .background-about-me-sort {
         margin-bottom: 100px;
     }
 
-    .about-me-sort-elements{
+    .about-me-sort-elements {
         flex-direction: column;
         align-items: center;
         height: auto;
     }
-
 }
 
-@media(max-width: 945px){
-
-    .container-landing{
+@media (max-width: 945px) {
+    .container-landing {
         min-height: 100vh;
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 125px;
     }
 
-    .landing-left{
+    .landing-left {
         align-items: center;
         text-align: center;
     }
 
-    .sort-text-img{
+    .sort-text-img {
     }
 
-    .card-body-text{
+    .card-body-text {
         width: 150px;
         margin: 8px;
     }
 
-    .card-body-img{
+    .card-body-img {
         width: 80px;
         height: 80px;
     }
 
-    .button-sort{
+    .button-sort {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .btn-secondary-default{
+    .btn-secondary-default {
         margin: 16px;
     }
 
-    .headline-positions{
+    .headline-positions {
         width: 100% !important;
         align-items: center !important;
     }
 
-    .contact-background-sort{
-
-        p{
+    .contact-background-sort {
+        p {
             width: 80%;
         }
-        
     }
 
-    form{
+    form {
         width: 100% !important;
         align-items: center !important;
-        input, textarea{
+        input,
+        textarea {
             width: 80% !important;
         }
     }
 
-    .btn-sort{
+    .btn-sort {
         width: 80% !important;
     }
 
-    .rect{
+    .rect {
         width: 100%;
     }
-
 }
 
-@media(max-width: 900px){
-
-    .about-me-body-sort{
+@media (max-width: 900px) {
+    .about-me-body-sort {
         height: 2300px;
     }
-
 }
 
-@media(max-width: 450px){
-    
-    .rect{
+@media (max-width: 450px) {
+    .rect {
         margin: 8px 0 8px 0;
     }
 
-    .landing-img{
+    .landing-img {
         width: 250px;
         height: 250px;
     }
-
 }
 
-@media(max-width: 490px){
-    
-    .card-body-text{
+@media (max-width: 490px) {
+    .card-body-text {
         margin-top: 55px;
         width: 100px;
         height: 80px;
-        p{
-        font-size: 16px;
+        p {
+            font-size: 16px;
         }
     }
 
-    .card-body-img{
+    .card-body-img {
         width: 60px;
         height: 60px;
-        img{
+        img {
             width: 30px;
         }
     }
 
-    .landing-left{
-        p{
+    .landing-left {
+        p {
             font-size: 50px;
         }
     }
 
-    .headline-skills{
-        h2{
+    .headline-skills {
+        h2 {
             font-size: 32px;
         }
     }
 
-    .headline-my-work{
-        h2{
+    .headline-my-work {
+        h2 {
             font-size: 32px;
         }
     }
-
 }
 
 /* end about me */
@@ -482,7 +578,7 @@ form {
     }
 }
 
-.headline-positions{
+.headline-positions {
     width: 800px;
     display: flex;
     flex-direction: column;
@@ -496,8 +592,8 @@ form {
     align-items: center;
     padding: 50px 0 50px 0;
 
-    h2{
-        color: #2DFCD8;
+    h2 {
+        color: #2dfcd8;
         font-size: 50px;
     }
     p {
@@ -505,7 +601,7 @@ form {
     }
 }
 
-.btn-sort{
+.btn-sort {
     width: 800px;
     display: flex;
     justify-content: flex-end;

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^(.*)$ https://www.denniskemnade.de/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^dennis-kemnade\.com [NC]
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^(.*)$ https://www.denniskemnade.de/$1 [R,L]
