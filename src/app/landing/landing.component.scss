@@ -55,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 32px 0;
 }
 
 .headline-skills {
@@ -124,6 +125,7 @@ body {
     background-color: black;
     width: 100%;
     min-height: 100vh;
+    padding: 0 0 32px 0;
 }
 
 .headline-my-work {
@@ -141,6 +143,13 @@ body {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.background-button{
+    padding: 21px 0 21px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 16px;
 }
 
 .button-sort {
@@ -237,13 +246,13 @@ body {
         margin: 0;
         font-size: 21px;
         font-weight: bold;
-        margin-bottom: 210px;
+        margin-bottom: 200px;
     }
 
     h3 {
         font-size: 32px;
         color: #fa2759;
-        margin: 0 0 16px 0;
+        margin: 0 0 8px 0;
     }
 }
 
