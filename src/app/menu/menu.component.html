@@ -6,8 +6,11 @@
         <a href="https://www.denniskemnade.de/downloads/Lebenslauf.pdf">Curriculum</a>
         <a href="#my-work">Projects</a>
     </div>
+    <div class="background-menu-button">
+        <img (click)="openCloseMenu()" id="mobile-menu-btn" class="mobile-menu-design" src="./assets/img/menu.png"
+            alt="">
 
-    <img (click)="openCloseMenu()" id="mobile-menu-btn" class="mobile-menu-design" src="./assets/img/menu.png" alt="">
+    </div>
 
     <div *ngIf="!openCloseCounter" class="mobile-menu-background-design">
         <a class="home-button" routerLink="/">Home</a>

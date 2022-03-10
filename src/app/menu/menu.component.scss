@@ -8,26 +8,29 @@
 
 @keyframes fadeOut{
     from{
-        top: -350px;
+        left: -350px;
     }
     to{
-        top: 70px;
+        left: 70px;
     }
 }
 
 .mobile-menu-background-design{
     position: absolute;
-    top: 70px;
+    top: 120px;
     display: flex;
     flex-direction: column;
-    right: 50px;
+    left: 0px;
     width: 200px;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     border: white solid 2px;
-    border-radius: 3px;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* border-radius: 3px; */
     text-align: center;
-    animation: fadeOut 0.5s ease-in;
+    animation: fadeOut 0.25s ease-in;
     a{
         margin-left: 0;
         padding: 16px 0 16px 0;
@@ -58,7 +61,7 @@
         padding: 0 16px 0 16xp!important;
         height: 100px !important;
         justify-content: center !important;
-        
+        padding: 0 !important;
     }
 
     .img-logo{
@@ -66,10 +69,19 @@
     }
 
     .mobile-menu-background-design{
-        left: calc(50% - 100px);
     }
 
-    
+    .background-menu-button{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+
+    .mobile-menu-design{
+        display: flex;
+        align-items: flex-start;
+    }
 
 }
 
@@ -107,4 +119,5 @@ header {
 
 .home-button {
     color: #fa2759 !important;
+    border-top-right-radius: 50px;
 }

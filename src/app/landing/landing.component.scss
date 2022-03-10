@@ -145,7 +145,7 @@ body {
     justify-content: center;
 }
 
-.background-button{
+.background-button {
     padding: 21px 0 21px 0;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
@@ -196,7 +196,6 @@ body {
     background-position: 60% 60%;
     background-repeat: no-repeat;
 }
-
 
 .pokedex-rect {
     width: 100%;
@@ -316,6 +315,7 @@ body {
     }
 
     p {
+        color: white;
         padding: 0 0 132px 0;
         font-size: 21px;
         font-weight: bold;
@@ -324,7 +324,7 @@ body {
     h3 {
         font-size: 32px;
         color: #fa2759;
-        margin: 0 0 16px 0;
+        margin: 0 0 8px 0;
     }
 }
 
@@ -403,12 +403,12 @@ body {
 }
 
 .content-about-me {
-    h4{
+    h4 {
         color: white;
     }
 }
 
-.about-me-text-design{
+.about-me-text-design {
     color: white;
     height: fit-content;
 }
@@ -424,32 +424,33 @@ body {
         }
     }
 
-    .about-me-body-sort {
-        height: 2000px;
-    }
-
     .background-about-me-sort {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
+        height: fit-content;
     }
 
     .about-me-sort-elements {
         flex-direction: column;
         align-items: center;
-        height: auto;
+        height: auto !important;
+        margin-bottom: 40px;
     }
 }
 
 @media (max-width: 945px) {
     .container-landing {
-        min-height: 100vh;
         flex-direction: column-reverse;
         align-items: center;
-        padding-top: 125px;
+        justify-content: flex-start;
+        padding-top: 120px;
     }
 
     .landing-left {
         align-items: center;
         text-align: center;
+        margin: 32px 0 32px 0;
+        justify-content: flex-start;
+        height: auto;
     }
 
     .sort-text-img {
@@ -481,6 +482,7 @@ body {
     }
 
     .contact-background-sort {
+        padding: 0 0 50px 0 !important;
         p {
             width: 80%;
         }
@@ -499,15 +501,21 @@ body {
         width: 80% !important;
     }
 
-    .rect {
+    .rect-sort {
         width: 100%;
+        align-items: center;
+    }
+
+    .rect {
+        width: 80%;
+    }
+
+    .skills-background{
+        min-height: auto;
     }
 }
 
 @media (max-width: 900px) {
-    .about-me-body-sort {
-        height: 2300px;
-    }
 }
 
 @media (max-width: 450px) {
@@ -515,9 +523,26 @@ body {
         margin: 8px 0 8px 0;
     }
 
+    .container-landing{
+        padding-top: 120px;
+    }
+
     .landing-img {
         width: 250px;
         height: 250px;
+    }
+
+    .El-Pollo-Loco-rect{
+        p{
+            margin-bottom: 178px;
+        }
+        h3{
+            margin: 0;
+        }
+    }
+
+    .rect-addon-poke{
+        background-position: 12% 60%;
     }
 }
 
@@ -556,6 +581,27 @@ body {
             font-size: 32px;
         }
     }
+
+    .rect {
+        width: 98% !important;
+        padding: 0!important;
+        margin: 16px 0 16px 0!important;
+    }
+
+    .left-about-me{
+        padding: 0;
+        width: 100%;
+        img{
+        margin: 32px 0 0 0 !important;
+        }
+    }
+
+    .about-me-top{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    
 }
 
 /* end about me */

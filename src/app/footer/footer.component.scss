@@ -43,3 +43,15 @@ footer{
     }
 
 }
+
+@media(max-width: 490px){
+
+    .links-design{
+        flex-direction: column;
+        a{
+            text-align: center;
+            margin: 8px !important;
+        }
+    }
+
+}
