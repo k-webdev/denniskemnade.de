@@ -6,6 +6,10 @@
     display: none;
 }
 
+.background-menu-button{
+    display: none;
+}
+
 @keyframes fadeOut{
     from{
         left: -350px;
@@ -41,6 +45,8 @@
         }
     }
 
+    
+
 }
 
 @media (max-width: 945px) {
@@ -48,6 +54,12 @@
         display: flex;
         width: 48px;
         height: 48px !important;
+    }
+
+    .background-menu-button{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .wide-menu{
