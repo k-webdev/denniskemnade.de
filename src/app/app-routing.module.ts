@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LandingComponent } from './landing/landing.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { LandingComponent } from './landing/landing.component';
 import { SuccessComponent } from './success/success.component';
 
 const routes: Routes = [
-  { path: '', component: LandingComponent }, 
+  { path: '', component: LandingComponent },
   { path: 'imprint', component: ImprintComponent },
-  { path: 'data-protection', component: DataProtectionComponent},
-  {path:'success', component: SuccessComponent}
+  { path: 'data-protection', component: DataProtectionComponent },
+  { path: 'success', component: SuccessComponent }
 ];
 
 @NgModule({
