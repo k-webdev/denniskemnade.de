@@ -1,0 +1,27 @@
+.success-background{
+    width: 100%;
+    height: calc(100vh - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: #fa2759;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 390px) {
+    
+    .success{
+        margin-top: 100px;
+        padding: 50px 0 50px 0;
+    }
+
+}

@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BackToTopComponent } from './back-to-top/back-to-top.component';
     FooterComponent,
     ImprintComponent,
     DataProtectionComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,

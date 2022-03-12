@@ -7,6 +7,10 @@ body {
     color: #2dfcd8;
 }
 
+.d-none{
+    display: none;
+}
+
 .colored-name {
     color: #fa2759;
 }
@@ -479,6 +483,13 @@ body {
     .headline-positions {
         width: 100% !important;
         align-items: center !important;
+    }
+
+    .contactSuccess{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     .contact-background-sort {
