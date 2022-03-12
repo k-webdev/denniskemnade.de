@@ -138,9 +138,9 @@
             <h2 style="color: white; margin: 0;" id="my-work">My Work</h2>
         </div>
         <div class="button-sort">
-            <a class="btn-secondary-default" href="#">All</a>
-            <a class="btn-secondary-default" href="#">Angular</a>
-            <a class="btn-secondary-default" href="#">Java Script</a>
+            <a class="btn-secondary-default" (click)="showAllProjects()">All</a>
+            <a class="btn-secondary-default" (click)="showElementAngular()">Angular</a>
+            <a class="btn-secondary-default" (click)="showElementJavaScript()">Java Script</a>
         </div>
     </div>
 
@@ -148,14 +148,14 @@
 
         <div class="rect-sort">
 
-            <div class="rect rect-addon-poke">
+            <div *ngIf="visibleJavaScript" class="rect rect-addon-poke">
                 <div class="pokedex-rect">
                     <h3>Pokedex</h3>
                     <p>API and JavaScript <br> -based Pokedex.</p>
                     <a class="btn-secondary-default" href="https://github.com/k-webdev/pokedex">Go GIT</a>
                 </div>
             </div>
-            <div class="rect">
+            <div *ngIf="visibleAngular" id="website" class="rect">
                 <div class="rect-addon-web web-rect">
                     <h3>Website</h3>
                     <p>Angular -based Website.</p>
@@ -166,7 +166,7 @@
         </div>
         <div class="rect-sort">
 
-            <div class="rect rect-addon-pollo">
+            <div *ngIf="visibleJavaScript" id="elPollo" class="rect rect-addon-pollo">
                 <div class="El-Pollo-Loco-rect">
                     <h3>El Pollo Loco</h3>
                     <p>JavaScript -based jump and run game.</p>
@@ -177,7 +177,7 @@
 
                 </div>
             </div>
-            <div class="rect rect-addon-quiz">
+            <div *ngIf="visibleJavaScript" id="quiz" class="rect rect-addon-quiz">
                 <div class="quiz-rect">
                     <h3>Quiz Time</h3>
                     <p>JavaScript and Bootstrap -based Quiz game.</p>
