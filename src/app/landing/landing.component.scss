@@ -7,7 +7,7 @@ body {
     color: #2dfcd8;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
@@ -90,7 +90,7 @@ body {
     justify-content: center;
     height: 100px;
     width: 100px;
-    border: rgba(0, 0, 0, 0.3) 1px solid;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     border-radius: 100%;
 
     img {
@@ -494,6 +494,8 @@ body {
     }
 
     .card-body-img {
+        position: relative;
+        top: 50px;
         width: 80px;
         height: 80px;
     }
@@ -513,7 +515,7 @@ body {
         align-items: center !important;
     }
 
-    .contactSuccess{
+    .contactSuccess {
         position: absolute;
         top: 0;
         width: 100%;
@@ -549,7 +551,7 @@ body {
         width: 80%;
     }
 
-    .skills-background{
+    .skills-background {
         min-height: auto;
     }
 }
@@ -562,7 +564,7 @@ body {
         margin: 8px 0 8px 0;
     }
 
-    .container-landing{
+    .container-landing {
         padding-top: 120px;
     }
 
@@ -571,31 +573,35 @@ body {
         height: 250px;
     }
 
-    .El-Pollo-Loco-rect{
-        p{
+    .El-Pollo-Loco-rect {
+        p {
             margin-bottom: 178px;
         }
-        h3{
+        h3 {
             margin: 0;
         }
     }
 
-    .rect-addon-poke{
+    .rect-addon-poke {
         background-position: 12% 60%;
     }
 }
 
 @media (max-width: 490px) {
     .card-body-text {
-        margin-top: 55px;
+        margin-top: 32px;
         width: 100px;
-        height: 80px;
+        height: 60px;
         p {
             font-size: 16px;
+            position: relative;
+            top: 30px;
         }
     }
 
     .card-body-img {
+        position: relative;
+        top: 60px;
         width: 60px;
         height: 60px;
         img {
@@ -623,24 +629,22 @@ body {
 
     .rect {
         width: 98% !important;
-        padding: 0!important;
-        margin: 16px 0 16px 0!important;
+        padding: 0 !important;
+        margin: 16px 0 16px 0 !important;
     }
 
-    .left-about-me{
+    .left-about-me {
         padding: 0;
         width: 100%;
-        img{
-        margin: 32px 0 0 0 !important;
+        img {
+            margin: 32px 0 0 0 !important;
         }
     }
 
-    .about-me-top{
+    .about-me-top {
         width: 100%;
         margin-bottom: 32px;
     }
-
-    
 }
 
 /* end about me */
