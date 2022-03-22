@@ -264,6 +264,42 @@ body {
     background-color: black;
 }
 
+/* ========== */
+
+.ring-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        width: fit-content;
+        margin: 0 16px 0 16px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 21px;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+}
+
+.rect-addon-ring {
+    background-image: url("../../assets/img/ringoffire.png");
+
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+/* ========== */
+
 .web-rect {
     width: 100%;
     height: 100%;
