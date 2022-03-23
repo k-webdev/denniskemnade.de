@@ -66,8 +66,4 @@ export class LandingComponent implements OnInit {
     this.visibleJavaScript = true;
     this.visibleAngular = false;
   }
-
-
 }
-
-
