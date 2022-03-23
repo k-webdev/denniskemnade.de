@@ -1,10 +1,15 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: '/',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })
+
+
+
 export class LandingComponent implements OnInit {
 
   visibleAngular = true;
@@ -13,6 +18,7 @@ export class LandingComponent implements OnInit {
   animateGreetingLine2 = false;
   animateGreetingLine3 = false;
   animateButtonOnOff = false;
+  inViewPort = true;
 
   test = document.getElementById('btn-struggle');
 
@@ -20,6 +26,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.addEventListener('scroll', this.scrollEvent, true);
     this.animateGreetingLineOne();
     this.animateGreetingLineTwo();
     this.animateGreetingLineThree();
@@ -42,15 +49,6 @@ export class LandingComponent implements OnInit {
     }, 1500);
   }
 
-  animateButton() {
-    setInterval(()=>{
-      this.animateButtonOnOff = true;
-      setTimeout(() => {
-        this.animateButtonOnOff = false;
-      }, 1000);
-    },5000);
-  }
-
   showAllProjects() {
     this.visibleAngular = true;
     this.visibleJavaScript = true;
@@ -66,4 +64,29 @@ export class LandingComponent implements OnInit {
     this.visibleJavaScript = true;
     this.visibleAngular = false;
   }
+
+  animateButton() {
+    setInterval(() => {
+      this.animateButtonOnOff = true;
+      console.log('inViewPort ',this.inViewPort);
+      if (this.inViewPort) {
+        setTimeout(() => {
+          this.animateButtonOnOff = false;
+        }, 1000);
+      }
+    }, 2000);
+  }
+
+  scrollEvent = (event: any): void => {
+    if (window.pageYOffset > 200) {
+      this.inViewPort = false;
+    } else if(window.pageYOffset < 200){
+      this.inViewPort = true;
+    }
+    /* console.log(this.animateButtonOnOff);
+    console.log(window.pageYOffset); */
+
+  }
+
+
 }
