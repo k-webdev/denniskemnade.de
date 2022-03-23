@@ -12,13 +12,19 @@ import { Component, OnInit } from '@angular/core';
 
 export class LandingComponent implements OnInit {
 
-  visibleAngular = true;
-  visibleJavaScript = true;
+  visibleAngular = true; //show and hide for Projects
+  visibleJavaScript = true; //show and hide for Projects
   animateGreetingLine1 = false;
   animateGreetingLine2 = false;
   animateGreetingLine3 = false;
   animateButtonOnOff = false;
   inViewPort = true;
+  skillsAnimationIn1 = false;
+  skillsAnimationIn2 = false;
+  skillsAnimationIn3 = false;
+  skillsAnimationOut1 = false;
+  skillsAnimationOut2 = false;
+  skillsAnimationOut3 = false;
 
   test = document.getElementById('btn-struggle');
 
@@ -68,23 +74,56 @@ export class LandingComponent implements OnInit {
   animateButton() {
     setInterval(() => {
       this.animateButtonOnOff = true;
-      console.log('inViewPort ',this.inViewPort);
       if (this.inViewPort) {
         setTimeout(() => {
           this.animateButtonOnOff = false;
         }, 1000);
       }
-    }, 2000);
+    }, 3000);
   }
 
   scrollEvent = (event: any): void => {
+    /**
+     * event for start toggle animation on "contact me" Button
+     */
     if (window.pageYOffset > 200) {
       this.inViewPort = false;
-    } else if(window.pageYOffset < 200){
-      this.inViewPort = true;
+    } else if (window.pageYOffset < 200) {
+      this.inViewPort = true; 
     }
-    /* console.log(this.animateButtonOnOff);
-    console.log(window.pageYOffset); */
+    /**
+     * event for start animation on "My Skills" section
+     */
+    if(window.pageYOffset > 400 && window.pageYOffset < 1100){
+      this.skillsAnimationIn1 = true;
+      this.skillsAnimationOut1 = false;
+      console.log('true ', window.pageYOffset );
+    }else if(window.pageYOffset > 1100 || window.pageYOffset < 400){
+      this.skillsAnimationIn1 = false;
+      this.skillsAnimationOut1 = true;
+    }
+
+    if(window.pageYOffset > 600 && window.pageYOffset < 1300){
+      this.skillsAnimationIn2 = true;
+      this.skillsAnimationOut2 = false;
+      console.log('true ', window.pageYOffset );
+    }else if(window.pageYOffset > 1100 || window.pageYOffset < 600){
+      this.skillsAnimationIn2 = false;
+      this.skillsAnimationOut2 = true;
+    }
+
+    if(window.pageYOffset > 800 && window.pageYOffset < 1500){
+      this.skillsAnimationIn3 = true;
+      this.skillsAnimationOut3 = false;
+      console.log('true ', window.pageYOffset );
+    }else if(window.pageYOffset > 1100 || window.pageYOffset < 800){
+      this.skillsAnimationIn3 = false;
+      this.skillsAnimationOut3 = true;
+    }
+
+
+    /* console.log(this.animateButtonOnOff); */
+    /* console.log(window.pageYOffset); */
 
   }
 
