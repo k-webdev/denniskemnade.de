@@ -4,7 +4,7 @@
         <p *ngIf="animateGreetingLine1" class="animate-text time1">Hi,</p>
         <p *ngIf="animateGreetingLine2" class="animate-text time2">I´m <span class="colored-name">Dennis</span> Kemnade</p>
         <p *ngIf="animateGreetingLine3" class="animate-text time3">Frontend Develop<span class="colored-letter">e</span>r</p>
-        <a class="btn-primary-default" style="margin-top: 32px;" href="#contact-me">Contact me</a>
+        <a [class.btn-struggle]="animateButtonOnOff" class="btn-primary-default"  style="margin-top: 32px;" href="#contact-me">Contact me</a>
     </div>
     <div>
         <img class="landing-img" src="./assets/img/me-image.JPEG">

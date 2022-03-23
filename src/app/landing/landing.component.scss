@@ -46,7 +46,33 @@ body {
     align-items: flex-start;
 }
 
-/* Test===== */
+/* === Animation for contact button === */
+
+.btn-struggle{
+    animation: struggleBTN 0.75s ;
+}
+
+@keyframes struggleBTN {
+    0%{
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    25%{
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(48deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    50%{
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-48deg) rotateY(-13deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    75%{
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(13deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    100%{
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+}
+
+/* ===================================== */
+
+/* === Animation for Landing Component === */
 
 .animate-text{
     overflow: hidden;
@@ -74,7 +100,7 @@ body {
 }
 
 .time2{
-    animation: typing2 2s steps(18) forwards;
+    animation: typing2 1s steps(18) forwards;
     border-left: none !important;
 }
 
@@ -94,7 +120,7 @@ body {
 }
 
 .time3{
-    animation: typing3 2s steps(17) forwards;
+    animation: typing3 1s steps(17) forwards;
 }
 
 @keyframes typing3 {

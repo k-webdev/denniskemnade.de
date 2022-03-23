@@ -12,7 +12,9 @@ export class LandingComponent implements OnInit {
   animateGreetingLine1 = false;
   animateGreetingLine2 = false;
   animateGreetingLine3 = false;
-  animateContactButton = false;
+  animateButtonOnOff = false;
+
+  test = document.getElementById('btn-struggle');
 
   constructor() {
   }
@@ -21,22 +23,32 @@ export class LandingComponent implements OnInit {
     this.animateGreetingLineOne();
     this.animateGreetingLineTwo();
     this.animateGreetingLineThree();
+    this.animateButton();
   }
 
-  animateGreetingLineOne(){
+  animateGreetingLineOne() {
     this.animateGreetingLine1 = true;
   }
 
-  animateGreetingLineTwo(){
-    setTimeout(()=>{
+  animateGreetingLineTwo() {
+    setTimeout(() => {
       this.animateGreetingLine2 = true;
-    },1000);
+    }, 500);
   }
 
-  animateGreetingLineThree(){
-    setTimeout(()=>{
+  animateGreetingLineThree() {
+    setTimeout(() => {
       this.animateGreetingLine3 = true;
-    },3000);
+    }, 1500);
+  }
+
+  animateButton() {
+    setInterval(()=>{
+      this.animateButtonOnOff = true;
+      setTimeout(() => {
+        this.animateButtonOnOff = false;
+      }, 1000);
+    },5000);
   }
 
   showAllProjects() {
@@ -55,7 +67,7 @@ export class LandingComponent implements OnInit {
     this.visibleAngular = false;
   }
 
-  
+
 }
 
 
