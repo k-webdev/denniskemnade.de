@@ -1,3 +1,9 @@
+/* testarea=================== */
+
+
+
+/* =============================== */
+
 /* Landing =============================== */
 body {
     margin: 0;
@@ -39,6 +45,74 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
+/* Test===== */
+
+.animate-text{
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.time1{
+    animation: typing1 0.5s steps(3) forwards;
+}
+
+@keyframes typing1 {
+    0%{
+        width: 0;
+        
+        border-right: solid 4px #2DFCD8;
+    }
+    90%{
+        width: 3ch;
+        border-right: solid 4px #2DFCD8;
+    }
+    100%{
+        border: none;
+    }
+}
+
+.time2{
+    animation: typing2 2s steps(18) forwards;
+    border-left: none !important;
+}
+
+@keyframes typing2 {
+    0%{
+        width: 0;
+        
+        border-right: solid 4px #2DFCD8;
+    }
+    90%{
+        width: 18ch;
+        border-right: solid 4px #2DFCD8;
+    }
+    100%{
+        border: none;
+    }
+}
+
+.time3{
+    animation: typing3 2s steps(17) forwards;
+}
+
+@keyframes typing3 {
+    0%{
+        width: 0;
+        
+        border-right: solid 4px #2DFCD8;
+    }
+    90%{
+        width: 17ch;
+        border-right: solid 4px #2DFCD8;
+    }
+    100%{
+        border: none;
+    }
+}
+
+/* ========= */
 
 .landing-img {
     height: 400px;
