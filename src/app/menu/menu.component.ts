@@ -14,21 +14,18 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-openCloseCounter = false;
+  openCloseCounter = false;
 
-/**
- * This function use the openCloseCounter to check the menu status. 
- * 
- * @param{boolean} openCloseCounter - this is the 
- */
-openCloseMenu() {
-  if (this.openCloseCounter == false) {
-    this.openCloseCounter = true;
-  } else if (this.openCloseCounter == true) {
-    this.openCloseCounter = false;
+  /**
+   * This function use the openCloseCounter to check the menu status. 
+   * 
+   * @param{boolean} openCloseCounter - this is the 
+   */
+  openCloseMenu() {
+    if (this.openCloseCounter == false) {
+      this.openCloseCounter = true;
+    } else if (this.openCloseCounter == true) {
+      this.openCloseCounter = false;
+    }
   }
-}
-
-
-
 }
