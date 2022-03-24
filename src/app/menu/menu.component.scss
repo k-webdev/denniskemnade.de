@@ -6,20 +6,20 @@
     display: none;
 }
 
-.background-menu-button{
+.background-menu-button {
     display: none;
 }
 
-@keyframes fadeOut{
-    from{
+@keyframes fadeOut {
+    from {
         left: -350px;
     }
-    to{
+    to {
         left: 70px;
     }
 }
 
-.mobile-menu-background-design{
+.mobile-menu-background-design {
     position: absolute;
     top: 120px;
     display: flex;
@@ -35,18 +35,15 @@
     /* border-radius: 3px; */
     text-align: center;
     animation: fadeOut 0.25s ease-in;
-    a{
+    a {
         margin-left: 0;
         padding: 16px 0 16px 0;
         width: 100%;
-        &:hover{
+        &:hover {
             color: white !important;
             background-color: rgba(250, 40, 88, 0.3);
         }
     }
-
-    
-
 }
 
 @media (max-width: 945px) {
@@ -55,74 +52,55 @@
         width: 48px;
         height: 48px !important;
     }
-
-    .background-menu-button{
+    .background-menu-button {
         width: 100%;
         display: flex;
         justify-content: flex-end;
     }
-
-    .wide-menu{
+    .wide-menu {
         display: none;
     }
 }
 
 @media (max-width: 530px) {
-    
-    header{
+    header {
         padding: 0 16px 0 16xp!important;
         height: 100px !important;
         justify-content: center !important;
         padding: 0 !important;
     }
-
-    .img-logo{
+    .img-logo {
         display: none;
     }
-
-    .mobile-menu-background-design{
-    }
-
-    .background-menu-button{
+    .background-menu-button {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         margin-left: 50px;
     }
-
-    .mobile-menu-design{
+    .mobile-menu-design {
         display: flex;
         align-items: flex-start;
     }
-
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 100px;
     z-index: 1;
-    padding-left: 120px;
-    padding-right: 120px;
-
+    padding: 0 120px 0 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #000000;
-
     img {
         height: 80px;
         cursor: pointer;
     }
-
     a {
         color: white;
         text-decoration: none;
         margin-left: 32px;
         font-weight: 800;
-
         &:hover {
             color: #fa2759;
         }

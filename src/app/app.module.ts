@@ -14,6 +14,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { SuccessComponent } from './success/success.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SuccessComponent } from './success/success.component';
     ImprintComponent,
     DataProtectionComponent,
     BackToTopComponent,
-    SuccessComponent
+    SuccessComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

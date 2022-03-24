@@ -7,8 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
+  backToTopOpenClose = false;
+
   ngOnInit(){
 
+  }
+
+  scrollevent = (event: any): void =>{
+    if(window.pageYOffset > 600){
+      this.backToTopOpenClose = true;
+    }
+
+    console.log('scroll y: ', window.screenY);
   }
 
   

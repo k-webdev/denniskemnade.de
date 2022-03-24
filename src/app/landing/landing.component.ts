@@ -39,20 +39,20 @@ export class LandingComponent implements OnInit {
     this.animateButton();
   }
 
-  animateGreetingLineOne() {
+  animateGreetingLineOne() {//animates "Hi," on landing top 
     this.animateGreetingLine1 = true;
   }
 
-  animateGreetingLineTwo() {
+  animateGreetingLineTwo() {//animates "I'm Dennis Kemnade" on landing top
     setTimeout(() => {
       this.animateGreetingLine2 = true;
-    }, 500);
+    }, 1500);
   }
 
-  animateGreetingLineThree() {
+  animateGreetingLineThree() {//animates "Frontend Developer" on landing top
     setTimeout(() => {
       this.animateGreetingLine3 = true;
-    }, 1500);
+    }, 4000);
   }
 
   showAllProjects() {

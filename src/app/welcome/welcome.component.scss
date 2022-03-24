@@ -1,0 +1,12 @@
+.welcome-screen-sort {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    h1,
+    p {
+        color: white;
+    }
+}

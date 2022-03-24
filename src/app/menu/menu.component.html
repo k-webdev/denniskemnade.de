@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" onscroll="stick()">
     <img class="img-logo" routerLink="/" src="./assets/img/logo-me.png" alt="">
 
     <div class="wide-menu">
@@ -7,8 +7,7 @@
         <a href="#my-work">Projects</a>
     </div>
     <div class="background-menu-button">
-        <img (click)="openCloseMenu()" id="mobile-menu-btn" class="mobile-menu-design" src="./assets/img/menu.png"
-            alt="">
+        <img (click)="openCloseMenu()" id="mobile-menu-btn" class="mobile-menu-design" src="./assets/img/menu.png" alt="">
 
     </div>
 
@@ -17,4 +16,5 @@
         <a href="https://www.denniskemnade.de/downloads/Lebenslauf.pdf" target="_blank">Curriculum</a>
         <a href="#my-work">Projects</a>
     </div>
+
 </header>

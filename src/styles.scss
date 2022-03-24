@@ -1,36 +1,51 @@
-html{
+html {
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #fa2759 #000000;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #000000;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #fa2759;
-    border-radius: 16px;
-    border: 3px solid #000000;
-  }
+    /* Firefox */
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #fa2759 #000000;
+    }
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 16px;
+    }
+    *::-webkit-scrollbar-track {
+        background: #000000;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #fa2759;
+        border-radius: 16px;
+        border: 3px solid #000000;
+    }
 }
-body{
+
+body {
     margin: 0;
-
-    
 }
+
+
+/* === Menu sticky === */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+
+/* =================== */
+
 
 /* ==== Button designes ==== */
-.btn-primary-default{/* for links */
+
+.btn-primary-default {
+    /* for links */
     border: 2px #2DFCD8 solid;
     border-radius: 3px;
     padding: 8px 32px 8px 32px;
@@ -38,14 +53,13 @@ body{
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-
-    &:hover{
+    &:hover {
         background-color: #2DFCD8;
         color: white;
     }
 }
 
-.btn-secondary-default{
+.btn-secondary-default {
     border: 2px #FA2759 solid;
     border-radius: 3px;
     padding: 8px 32px 8px 32px;
@@ -54,46 +68,47 @@ body{
     font-weight: bold;
     margin: 32px;
     cursor: pointer;
-
-    &:hover{
+    &:hover {
         background-color: #FA2759;
         color: white;
     }
 }
 
-.btn-primary-default-real-btn{
-  cursor: pointer;
-  background-color: black;
-  border: 2px #2DFCD8 solid;
-  border-radius: 3px;
-  padding: 8px 32px 8px 32px;
-  color: #2DFCD8;
-  text-decoration: none;
-  font-weight: bold;
-
-  &:hover{
-      background-color: #2DFCD8;
-      color: white;
-  }
+.btn-primary-default-real-btn {
+    cursor: pointer;
+    background-color: black;
+    border: 2px #2DFCD8 solid;
+    border-radius: 3px;
+    padding: 8px 32px 8px 32px;
+    color: #2DFCD8;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+        background-color: #2DFCD8;
+        color: white;
+    }
 }
+
+
 /* ==== Button designs END = */
+
 
 /* Scroll UP Arrow */
 
-.space{
-  height: 200px;
-  background-color: red;
+.space {
+    height: 200px;
+    background-color: red;
 }
 
-.back-to-top{
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 10;
-  background-color: #2DFCD8;
-  width: 50px;
-  height: 50px;
-  border: white;
-  border-radius: 100%;
-  transform: rotate(180deg);
+.back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    background-color: #2DFCD8;
+    width: 50px;
+    height: 50px;
+    border: white;
+    border-radius: 100%;
+    transform: rotate(180deg);
 }

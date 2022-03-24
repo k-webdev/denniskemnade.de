@@ -1,45 +1,44 @@
 /* testarea=================== */
 
-.my-skills-animationIn{
+.my-skills-animationIn {
     animation: mySkillsAnimationIn 2s;
     transform: scale(0);
 }
 
 @keyframes mySkillsAnimationIn {
-    0%{
+    0% {
         transform: scale(0);
     }
-    50%{
+    50% {
         transform: scale(1.25);
     }
-    100%{
+    100% {
         transform: scale(1.0);
     }
 }
 
-.my-skills-animationOut{
+.my-skills-animationOut {
     animation: mySkillsAnimationOut 2s;
     transform: scale(0);
 }
 
 @keyframes mySkillsAnimationOut {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+    50% {
         transform: scale(1.5);
     }
-    100%{
+    100% {
         transform: scale(0);
     }
 }
 
+
 /* =============================== */
 
+
 /* Landing =============================== */
-body {
-    margin: 0;
-}
 
 .colored-letter {
     color: #2dfcd8;
@@ -78,97 +77,98 @@ body {
     align-items: flex-start;
 }
 
+
 /* === Animation for contact button === */
 
-.btn-struggle{
-    animation: struggleBTN 0.75s ;
+.btn-struggle {
+    animation: struggleBTN 0.75s;
 }
 
 @keyframes struggleBTN {
-    0%{
+    0% {
         transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
     }
-    25%{
+    25% {
         transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(48deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
     }
-    50%{
+    50% {
         transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-48deg) rotateY(-13deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
     }
-    75%{
+    75% {
         transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(13deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
     }
-    100%{
+    100% {
         transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
     }
 }
 
+
 /* ===================================== */
+
 
 /* === Animation for Landing Component === */
 
-.animate-text{
+.animate-text {
     overflow: hidden;
     word-wrap: break-word;
     white-space: nowrap;
 }
 
-.time1{
-    animation: typing1 0.5s steps(3) forwards;
+.time1 {
+    animation: typing1 0.75s steps(3) forwards;
 }
 
 @keyframes typing1 {
-    0%{
+    0% {
         width: 0;
-        
         border-right: solid 4px #2DFCD8;
     }
-    90%{
+    90% {
         width: 3ch;
         border-right: solid 4px #2DFCD8;
     }
-    100%{
+    100% {
         border: none;
     }
 }
 
-.time2{
-    animation: typing2 1s steps(18) forwards;
+.time2 {
+    animation: typing2 2s steps(18) forwards;
     border-left: none !important;
 }
 
 @keyframes typing2 {
-    0%{
+    0% {
         width: 0;
-        
         border-right: solid 4px #2DFCD8;
     }
-    90%{
+    90% {
         width: 18ch;
         border-right: solid 4px #2DFCD8;
     }
-    100%{
+    100% {
         border: none;
     }
 }
 
-.time3{
-    animation: typing3 1s steps(17) forwards;
+.time3 {
+    animation: typing3 2s steps(17) forwards;
 }
 
 @keyframes typing3 {
-    0%{
+    0% {
         width: 0;
-        
         border-right: solid 4px #2DFCD8;
     }
-    90%{
+    90% {
         width: 17ch;
         border-right: solid 4px #2DFCD8;
     }
-    100%{
+    100% {
         border: none;
     }
 }
+
 
 /* ========= */
 
@@ -180,7 +180,9 @@ body {
     border-radius: 100%;
 }
 
+
 /* end landing ========= */
+
 
 /*  my skills */
 
@@ -224,7 +226,6 @@ body {
     width: 100px;
     box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     border-radius: 100%;
-
     img {
         background-color: white;
         width: 50px;
@@ -249,7 +250,9 @@ body {
     }
 }
 
+
 /* end my skills */
+
 
 /* my work */
 
@@ -319,7 +322,6 @@ body {
 
 .rect-addon-pollo {
     background-image: url("../../assets/img/EPL.png");
-
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -327,7 +329,6 @@ body {
 
 .rect-addon-poke {
     background-image: url("../../assets/img/poke.png");
-
     background-size: cover;
     background-position: 60% 60%;
     background-repeat: no-repeat;
@@ -340,19 +341,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
     a {
         width: fit-content;
         margin: 0 16px 0 16px;
     }
-
     p {
         color: white;
         margin: 0 0 32px 16px;
         font-size: 21px;
         font-weight: bold;
     }
-
     h3 {
         font-size: 32px;
         color: #fa2759;
@@ -367,19 +365,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     a {
         width: fit-content;
         margin: 0 16px 0 16px;
     }
-
     p {
         margin: 0;
         font-size: 21px;
         font-weight: bold;
         margin-bottom: 200px;
     }
-
     h3 {
         font-size: 32px;
         color: #fa2759;
@@ -389,7 +384,6 @@ body {
 
 .rect-addon-web {
     background-image: url("../../assets/img/PF.png");
-
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -403,13 +397,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     a {
         width: fit-content;
         margin: 0 16px 0 16px;
         margin-bottom: 0px;
     }
-
     p {
         margin: 0;
         font-size: 21px;
@@ -421,7 +413,6 @@ body {
 
 .rect-addon-ring {
     background-image: url("../../assets/img/ringoffire.png");
-
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -435,19 +426,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     a {
         width: fit-content;
         margin: 0 0 0 0;
     }
-
     p {
         color: white;
         padding: 0 0 132px 0;
         font-size: 21px;
         font-weight: bold;
     }
-
     h3 {
         font-size: 32px;
         color: #fa2759;
@@ -457,7 +445,6 @@ body {
 
 .rect-addon-quiz {
     background-image: url("../../assets/img/quiz.jpg");
-
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -472,19 +459,16 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-
     a {
         width: fit-content;
         margin: 0 16px 0 16px;
     }
-
     p {
         color: white;
         padding: 0 0 132px 0;
         font-size: 21px;
         font-weight: bold;
     }
-
     h3 {
         font-size: 32px;
         color: #fa2759;
@@ -498,7 +482,9 @@ body {
     }
 }
 
+
 /* end my work */
+
 
 /* about me */
 
@@ -526,7 +512,6 @@ body {
         width: 200px;
         object-fit: cover;
     }
-
     p,
     h3 {
         color: white;
@@ -558,7 +543,6 @@ body {
 .img-background {
     background-color: #2dfcd8;
     border-radius: 100%;
-
     img {
         padding: 25px;
         width: 50px;
@@ -581,18 +565,15 @@ body {
     .left-about-me {
         flex-direction: column;
         text-align: center;
-
         h3,
         p {
             margin: 32px 0 0 0;
         }
     }
-
     .background-about-me-sort {
         margin-bottom: 0px;
         height: fit-content;
     }
-
     .about-me-sort-elements {
         flex-direction: column;
         align-items: center;
@@ -608,7 +589,6 @@ body {
         justify-content: flex-start;
         padding-top: 120px;
     }
-
     .landing-left {
         align-items: center;
         text-align: center;
@@ -616,51 +596,41 @@ body {
         justify-content: flex-start;
         height: auto;
     }
-
-    .sort-text-img {
-    }
-
+    .sort-text-img {}
     .card-body-text {
         width: 150px;
         margin: 8px;
     }
-
     .card-body-img {
         position: relative;
         top: 50px;
         width: 80px;
         height: 80px;
     }
-
     .button-sort {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .btn-secondary-default {
         margin: 16px;
     }
-
     .headline-positions {
         width: 100% !important;
         align-items: center !important;
     }
-
     .contactSuccess {
         position: absolute;
         top: 0;
         width: 100%;
         height: 100vh;
     }
-
     .contact-background-sort {
         padding: 0 0 50px 0 !important;
         p {
             width: 80%;
         }
     }
-
     form {
         width: 100% !important;
         align-items: center !important;
@@ -669,42 +639,34 @@ body {
             width: 80% !important;
         }
     }
-
     .btn-sort {
         width: 80% !important;
     }
-
     .rect-sort {
         width: 100%;
         align-items: center;
     }
-
     .rect {
         width: 80%;
     }
-
     .skills-background {
         min-height: auto;
     }
 }
 
-@media (max-width: 900px) {
-}
+@media (max-width: 900px) {}
 
 @media (max-width: 450px) {
     .rect {
         margin: 8px 0 8px 0;
     }
-
     .container-landing {
         padding-top: 120px;
     }
-
     .landing-img {
         width: 250px;
         height: 250px;
     }
-
     .El-Pollo-Loco-rect {
         p {
             margin-bottom: 178px;
@@ -713,7 +675,6 @@ body {
             margin: 0;
         }
     }
-
     .rect-addon-poke {
         background-position: 12% 60%;
     }
@@ -730,7 +691,6 @@ body {
             top: 30px;
         }
     }
-
     .card-body-img {
         position: relative;
         top: 60px;
@@ -740,31 +700,26 @@ body {
             width: 30px;
         }
     }
-
     .landing-left {
         p {
             font-size: 50px;
         }
     }
-
     .headline-skills {
         h2 {
             font-size: 32px;
         }
     }
-
     .headline-my-work {
         h2 {
             font-size: 32px;
         }
     }
-
     .rect {
         width: 98% !important;
         padding: 0 !important;
         margin: 16px 0 16px 0 !important;
     }
-
     .left-about-me {
         padding: 0;
         width: 100%;
@@ -772,14 +727,15 @@ body {
             margin: 32px 0 0 0 !important;
         }
     }
-
     .about-me-top {
         width: 100%;
         margin-bottom: 32px;
     }
 }
 
+
 /* end about me */
+
 
 /* contact form */
 
@@ -787,7 +743,6 @@ form {
     width: 800px;
     display: flex;
     flex-direction: column;
-
     input,
     textarea {
         color: white;
@@ -801,7 +756,6 @@ form {
             outline: none;
         }
     }
-
     a {
         margin: 16px 0 0 0;
         width: fit-content;
@@ -821,7 +775,6 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 50px 0 50px 0;
-
     h2 {
         color: #2dfcd8;
         font-size: 50px;
@@ -837,5 +790,6 @@ form {
     justify-content: flex-end;
     padding: 16px;
 }
+
 
 /* end contact form */
