@@ -1,4 +1,5 @@
 import { ViewportScroller } from '@angular/common';
+import { identifierName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -30,7 +31,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    window.addEventListener('scroll', this.scrollEvent, true);
+    /* window.addEventListener('scroll', this.scrollEvent, true); */
     this.animateGreetingLineOne();
     this.animateGreetingLineTwo();
     this.animateGreetingLineThree();
@@ -79,42 +80,32 @@ export class LandingComponent implements OnInit {
       }
     }, 3000);
   }
-  scrollEvent = (event: any): void => {
-    /**
-     * event for start toggle animation on "contact me" Button
-     */
-    if (window.pageYOffset > 200) {
-      this.inViewPort = false;
-    } else if (window.pageYOffset < 200) {
-      this.inViewPort = true; 
-    }
-    /**
-     * event for start animation on "My Skills" section
-     */
-    if(window.pageYOffset > 400 && window.pageYOffset < 1100){
-      this.skillsAnimationIn1 = true;
-      this.skillsAnimationOut1 = false;
-    }else if(window.pageYOffset > 1100 || window.pageYOffset < 400){
-      this.skillsAnimationIn1 = false;
-      this.skillsAnimationOut1 = true;
-    }
 
-    if(window.pageYOffset > 600 && window.pageYOffset < 1300){
-      this.skillsAnimationIn2 = true;
-      this.skillsAnimationOut2 = false;
-    }else if(window.pageYOffset > 1100 || window.pageYOffset < 600){
-      this.skillsAnimationIn2 = false;
-      this.skillsAnimationOut2 = true;
-    }
+  /* ================================ Use intersectionObserver for start and stop animations ================================ */
 
-    if(window.pageYOffset > 800 && window.pageYOffset < 1500){
-      this.skillsAnimationIn3 = true;
-      this.skillsAnimationOut3 = false;
-    }else if(window.pageYOffset > 1100 || window.pageYOffset < 800){
-      this.skillsAnimationIn3 = false;
-      this.skillsAnimationOut3 = true;
-    }
-    /* console.log(window.pageYOffset); */
-  }
+  animierteElemente = document.querySelectorAll('.test');// Alle Elemente mit der Klasse "test" werden beobachtet
+
+  kofiguration = {
+    threshold: [0, 0.75]//"0" ist der Standartwert, 0.75 gibt an wie viel prozent sichtbar sein sollen(hier 75%).
+  };
+
+  observer = new IntersectionObserver(
+    (elemente) => {
+      /*console.log(elemente);*/ //kann zur Anzeige der Elemente in der Konsole genutzt werden.
+      elemente.forEach((element) => {
+        if (element.intersectionRatio > 0.75) {// wenn das element mindestens 75% im sichtfeld liegt. (0.75 klappt nur wenn threshold den Wert kennt).
+          element.target.classList.add('sichtbar');//hinzufügen der klasse "sichtbar", welche die Animation beinhaltet.
+        } else {
+          element.target.classList.remove('sichtbar');//entfernen der Klasse "sichtbar".
+        }
+      });
+    }, this.kofiguration
+  );
+
+  this.animierteElemente.forEach((eintrag) => {
+    this.observer.observe(eintrag);
+  });
+
   
+/* ============================== Use intersectionObserver for start and stop animations end ============================== */
 }
