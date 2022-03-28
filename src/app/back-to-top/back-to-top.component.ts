@@ -11,7 +11,4 @@ export class BackToTopComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  
-
 }

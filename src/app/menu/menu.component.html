@@ -1,10 +1,13 @@
-<header id="header" onscroll="stick()">
+<header class="header-bg" onscroll="stick()">
     <img class="img-logo" routerLink="/" src="./assets/img/logo-me.png" alt="">
 
     <div class="wide-menu">
-        <a class="home-button" routerLink="/">Home</a>
-        <a href="https://www.denniskemnade.de/downloads/Lebenslauf.pdf" target="_blank">Curriculum</a>
-        <a href="#my-work">Projects</a>
+        <a class="menu-button" class="home-button" routerLink="/">Home</a>
+        <a class="menu-button" href="https://www.denniskemnade.de/downloads/Lebenslauf.pdf" target="_blank">Curriculum</a>
+        <a class="menu-button"  href="#skills">Skills</a>
+        <a class="menu-button"  href="#aboutMe">About me</a>
+        <a class="menu-button"  href="#contact">Contact</a>
+        <a class="menu-button" href="#my-work">Projects</a>
     </div>
     <div class="background-menu-button">
         <img (click)="openCloseMenu()" id="mobile-menu-btn" class="mobile-menu-design" src="./assets/img/menu.png" alt="">
@@ -14,7 +17,10 @@
     <div *ngIf="!openCloseCounter" class="mobile-menu-background-design">
         <a class="home-button" routerLink="/">Home</a>
         <a href="https://www.denniskemnade.de/downloads/Lebenslauf.pdf" target="_blank">Curriculum</a>
-        <a href="#my-work">Projects</a>
+        <a  href="#skills">Skills</a>
+        <a  href="#aboutMe">About me</a>
+        <a  href="#contact">Contact</a>
+        <a class="bottom-button" href="#my-work">Projects</a>
     </div>
 
 </header>

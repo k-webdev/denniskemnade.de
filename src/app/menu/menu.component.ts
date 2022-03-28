@@ -11,9 +11,8 @@ export class MenuComponent implements OnInit {
     this.openCloseMenu();
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
-
   openCloseCounter = false;
 
   /**

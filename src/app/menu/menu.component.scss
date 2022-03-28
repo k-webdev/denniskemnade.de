@@ -24,14 +24,36 @@ header {
     }
 }
 
+.menu-button{
+    border-bottom: 4px solid transparent;
+    &:hover{
+        transition: border-bottom 0.25s ease-in;
+        border-bottom: 4px solid #FA2759;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+@keyframes transitIn {
+    from{
+        
+
+    }
+}
+
+.bottom-button{
+    border-bottom-right-radius: 50px;
+}
+
 .mobile-menu-background-design {
     position: absolute;
     top: 120px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     left: 0px;
     width: 200px;
-    height: 300px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.8);
     border: white solid 2px;
     border-left: none;
@@ -51,7 +73,7 @@ header {
     }
 }
 
-@media (max-width: 945px) {
+@media (max-width: 1000px) {
     .mobile-menu-design {
         display: flex;
         width: 48px;
@@ -96,7 +118,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.8);
     img {
         height: 80px;
         cursor: pointer;
