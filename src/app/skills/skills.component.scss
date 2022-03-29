@@ -1,32 +1,67 @@
-.skills-background{
-    background-color: #1A1A1A;
+.my-skills-animationIn {
+    animation: mySkillsAnimationIn 1s ease-in;
+    transform: scale(1);
+}
+
+@keyframes mySkillsAnimationIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.my-skills-animationOut {
+    animation: mySkillsAnimationOut 1s ease-out;
+    transform: scale(0);
+}
+
+@keyframes mySkillsAnimationOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.skills-background {
+    background-color: #1a1a1a;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 32px 0;
 }
 
-.headline-skills{
-    h2{
+.headline-skills {
+    h2 {
         color: white;
         font-size: 48px;
         margin: 32px 0 0 0;
     }
 }
 
-.skill-sort-lines{
+.skill-sort-lines {
     display: flex;
     justify-content: center;
 }
 
-.sort-text-img{
+.sort-text-img {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card-body-img{
+.card-body-img {
     position: relative;
     top: 60px;
     background-color: white;
@@ -35,17 +70,16 @@
     justify-content: center;
     height: 100px;
     width: 100px;
-    border: rgba(0, 0, 0, 0.3) 1px solid;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
     border-radius: 100%;
-
-    img{
+    img {
         background-color: white;
         width: 50px;
         object-fit: contain;
     }
 }
 
-.card-body-text{
+.card-body-text {
     margin: 16px 32px 16px 32px;
     display: flex;
     justify-content: center;
@@ -55,7 +89,7 @@
     height: 125px;
     border-radius: 8px;
     padding-bottom: 32px;
-    p{
+    p {
         font-size: 21px;
         font-weight: bold;
         text-align: center;

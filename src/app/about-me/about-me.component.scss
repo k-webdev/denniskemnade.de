@@ -1,6 +1,6 @@
 .about-me-body-sort {
     width: 100%;
-    min-height: 750px;
+    min-height: 1100px;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,6 @@
         width: 200px;
         object-fit: cover;
     }
-
     p,
     h3 {
         color: white;
@@ -54,7 +53,6 @@
 .img-background {
     background-color: #2dfcd8;
     border-radius: 100%;
-
     img {
         padding: 25px;
         width: 50px;
@@ -63,43 +61,12 @@
 }
 
 .content-about-me {
-    h4,
-    span {
+    h4 {
         color: white;
     }
 }
 
-@media(max-width: 1115px){
-
-    .left-about-me{
-        flex-direction: column;
-        text-align: center;
-
-        h3, p{
-            margin: 32px 0 0 0;
-        }
-    }
-
-    .about-me-body-sort{
-        height: 2000px;
-    }
-
-    .background-about-me-sort{
-        margin-bottom: 100px;
-    }
-
-    .about-me-sort-elements{
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-}
-
-@media(max-width: 900px){
-
-    .about-me-body-sort{
-        height: 2300px;
-    }
-
+.about-me-text-design {
+    color: white;
+    height: fit-content;
 }

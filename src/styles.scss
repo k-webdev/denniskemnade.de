@@ -114,7 +114,214 @@ body {
 }
 
 @media (max-width: 400px) {
-    body{
+    body {
         overflow-x: hidden;
+    }
+}
+
+
+/* ========== responsiv ========== */
+
+@media (max-width: 1115px) {
+    .left-about-me {
+        flex-direction: column;
+        text-align: center;
+        h3,
+        p {
+            margin: 32px 0 0 0;
+        }
+    }
+    .background-about-me-sort {
+        margin-bottom: 0px;
+        height: fit-content;
+    }
+    .about-me-sort-elements {
+        flex-direction: column;
+        align-items: center;
+        height: auto !important;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 945px) {
+    .container-landing {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 120px;
+    }
+    .landing-left {
+        align-items: center;
+        text-align: center;
+        margin: 32px 0 32px 0;
+        justify-content: flex-start;
+        height: auto;
+        p {
+            font-size: 48px;
+        }
+    }
+    .sort-text-img {}
+    .card-body-text {
+        width: 150px;
+        margin: 8px;
+    }
+    .card-body-img {
+        position: relative;
+        top: 50px;
+        width: 80px;
+        height: 80px;
+    }
+    .button-sort {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-secondary-default {
+        margin: 16px;
+    }
+    .headline-positions {
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .contactSuccess {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .contact-background-sort {
+        padding: 0 0 50px 0 !important;
+        p {
+            width: 80%;
+        }
+    }
+    form {
+        width: 100% !important;
+        align-items: center !important;
+        input,
+        textarea {
+            width: 80% !important;
+        }
+    }
+    .btn-sort {
+        width: 80% !important;
+    }
+    .rect-sort {
+        width: 100%;
+        align-items: center;
+    }
+    .rect {
+        width: 80%;
+    }
+    .skills-background {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 1500px) {
+    .container-landing {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .landing-left {
+        align-items: center;
+        text-align: center;
+        margin: 32px 0 120px 0;
+        justify-content: flex-start;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .rect {
+        margin: 8px 0 8px 0;
+    }
+    .container-landing {
+        padding-top: 120px;
+    }
+    .landing-img {
+        width: 250px;
+        height: 250px;
+    }
+    .El-Pollo-Loco-rect {
+        p {
+            margin-bottom: 178px;
+        }
+        h3 {
+            margin: 0;
+        }
+    }
+    .rect-addon-poke {
+        background-position: 12% 60%;
+    }
+}
+
+@media (max-width: 530px) {
+    .landing-left {
+        p {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 365px) {
+    .landing-left {
+        p {
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .card-body-text {
+        margin-top: 32px;
+        width: 100px;
+        height: 60px;
+        p {
+            font-size: 16px;
+            position: relative;
+            top: 30px;
+        }
+    }
+    .card-body-img {
+        position: relative;
+        top: 60px;
+        width: 60px;
+        height: 60px;
+        img {
+            width: 30px;
+        }
+    }
+    .landing-left {
+        p {
+            font-size: 32px;
+        }
+    }
+    .headline-skills {
+        h2 {
+            font-size: 32px;
+        }
+    }
+    .headline-my-work {
+        h2 {
+            font-size: 32px;
+        }
+    }
+    .rect {
+        width: 98% !important;
+        padding: 0 !important;
+        margin: 16px 0 16px 0 !important;
+    }
+    .left-about-me {
+        padding: 0;
+        width: 100%;
+        img {
+            margin: 32px 0 0 0 !important;
+        }
+    }
+    .about-me-top {
+        width: 100%;
+        margin-bottom: 32px;
     }
 }

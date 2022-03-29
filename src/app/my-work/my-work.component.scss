@@ -1,3 +1,34 @@
+.animationSlideIn {
+    animation: animateInSlide 1s ease-in;
+    transform: scale(1);
+}
+
+@keyframes animateInSlide {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animationSlideOut {
+    animation: animateOutSlide 1s ease-out;
+    transform: scale(0);
+}
+
+@keyframes animateOutSlide {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+
+/* animations end */
+
 body {
     margin: 0;
 }
@@ -6,12 +37,11 @@ body {
     background-color: black;
     width: 100%;
     min-height: 100vh;
+    padding: 0 0 32px 0;
 }
 
-.headline-my-work{
-   
-
-    h2{
+.headline-my-work {
+    h2 {
         color: white;
         margin: 0;
         font-size: 50px;
@@ -27,7 +57,14 @@ body {
     justify-content: center;
 }
 
-.button-sort{
+.background-button {
+    padding: 21px 0 21px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.button-sort {
     margin-top: 32px;
 }
 
@@ -52,53 +89,168 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+    /* box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.2); */
+    border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.rect-addon{
-    background-image: url('/assets/img/EPL.png');
-    
+.rect-addon-pollo {
+    background-image: url("../../assets/img/EPL.png");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
 
-    &:hover{
-        
+.rect-addon-poke {
+    background-image: url("../../assets/img/poke.png");
+    background-size: cover;
+    background-position: 60% 60%;
+    background-repeat: no-repeat;
+}
+
+.pokedex-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    a {
+        width: fit-content;
+        margin: 0 16px 0 16px;
+    }
+    p {
+        color: white;
+        margin: 0 0 32px 16px;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 32px;
+        color: #fa2759;
+        margin: 16px 0 16px 16px;
     }
 }
 
-.El-Pollo-Loco-rect{
+.El-Pollo-Loco-rect {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    &:hover{
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    a{
+    a {
         width: fit-content;
-        margin: 90px 0 130px 0;
+        margin: 0 16px 0 16px;
     }
-
-    p{
+    p {
         margin: 0;
         font-size: 21px;
         font-weight: bold;
+        margin-bottom: 200px;
     }
-
-
-    h3{
+    h3 {
         font-size: 32px;
-        color: #FA2759;
+        color: #fa2759;
+        margin: 0 0 8px 0;
+    }
+}
+
+.rect-addon-web {
+    background-image: url("../../assets/img/PF.png");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.ring-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        width: fit-content;
+        margin: 0 16px 0 16px;
+        margin-bottom: 0px;
+    }
+    p {
+        margin: 0;
+        font-size: 21px;
+        font-weight: bold;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+}
+
+.rect-addon-ring {
+    background-image: url("../../assets/img/ringoffire.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.web-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+        width: fit-content;
+        margin: 0 0 0 0;
+    }
+    p {
+        color: white;
+        padding: 0 0 132px 0;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 32px;
+        color: #fa2759;
         margin: 0 0 16px 0;
     }
 }
 
-@media(max-width: 1515px){
-    .rect-sort{
+.rect-addon-quiz {
+    background-image: url("../../assets/img/quiz.jpg");
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.quiz-rect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    a {
+        width: fit-content;
+        margin: 0 16px 0 16px;
+    }
+    p {
+        color: white;
+        padding: 0 0 132px 0;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 32px;
+        color: #fa2759;
+        margin: 0 0 8px 0;
+    }
+}
+
+@media (max-width: 1515px) {
+    .rect-sort {
         flex-direction: column;
     }
 }

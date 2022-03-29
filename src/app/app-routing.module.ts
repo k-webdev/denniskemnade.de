@@ -5,13 +5,15 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 import { ImprintComponent } from './imprint/imprint.component';
 import { SuccessComponent } from './success/success.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'imprint', component: ImprintComponent },
   { path: 'data-protection', component: DataProtectionComponent },
   { path: 'success', component: SuccessComponent },
-  { path: 'welcome', component: WelcomeComponent }
+  { path: 'welcome', component: WelcomeComponent },
+  { path: 'skills', component: SkillsComponent }
 ];
 
 @NgModule({

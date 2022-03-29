@@ -13,19 +13,12 @@ import { Component, OnInit } from '@angular/core';
 
 export class LandingComponent implements OnInit {
 
-  visibleAngular = true; //show and hide for Projects
-  visibleJavaScript = true; //show and hide for Projects
+  
   animateGreetingLine1 = false;
   animateGreetingLine2 = false;
   animateGreetingLine3 = false;
   animateButtonOnOff = false;
-  inViewPort = true;
-  skillsAnimationIn1 = false;
-  skillsAnimationIn2 = false;
-  skillsAnimationIn3 = false;
-  skillsAnimationOut1 = false;
-  skillsAnimationOut2 = false;
-  skillsAnimationOut3 = false;
+  inViewPort = true;//Animatet Button contact me
 
   constructor() {
   }
@@ -56,21 +49,7 @@ export class LandingComponent implements OnInit {
     }, 4000);
   }
 
-  showAllProjects() {
-    this.visibleAngular = true;
-    this.visibleJavaScript = true;
-  }
-
-
-  showElementAngular() {
-    this.visibleAngular = true;
-    this.visibleJavaScript = false;
-  }
-
-  showElementJavaScript() {
-    this.visibleJavaScript = true;
-    this.visibleAngular = false;
-  }
+ 
 
   animateButton() {
     setInterval(() => {
