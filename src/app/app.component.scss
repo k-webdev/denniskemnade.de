@@ -1,4 +1,71 @@
-body{
+body {
     margin: 0;
-    
+}
+
+
+/* =========================== */
+
+.my-skills-animationIn {
+    animation: mySkillsAnimationIn 1s ease-in;
+    transform: scale(1);
+}
+
+@keyframes mySkillsAnimationIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.my-skills-animationOut {
+    animation: mySkillsAnimationOut 1s ease-out;
+    transform: scale(0);
+}
+
+@keyframes mySkillsAnimationOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+/* ================================ */
+
+.animationSlideIn {
+    animation: animateInSlide 1s ease-in;
+    transform: scale(1);
+}
+
+@keyframes animateInSlide {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animationSlideOut {
+    animation: animateOutSlide 1s ease-out;
+    transform: scale(0);
+}
+
+@keyframes animateOutSlide {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
 }
