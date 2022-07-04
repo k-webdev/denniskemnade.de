@@ -15,6 +15,7 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { SuccessComponent } from './success/success.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { BabyNamesComponent } from './baby-names/baby-names.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     DataProtectionComponent,
     BackToTopComponent,
     SuccessComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    BabyNamesComponent
   ],
   imports: [
     BrowserModule,

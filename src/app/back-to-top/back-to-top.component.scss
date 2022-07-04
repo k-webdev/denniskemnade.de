@@ -1,0 +1,7 @@
+.back-to-top{
+    cursor: pointer;
+    opacity: 0.3;
+    &:hover{
+        opacity: 1;
+    }
+}

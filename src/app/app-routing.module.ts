@@ -6,6 +6,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { SuccessComponent } from './success/success.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SkillsComponent } from './skills/skills.component';
+import { BabyNamesComponent } from './baby-names/baby-names.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'data-protection', component: DataProtectionComponent },
   { path: 'success', component: SuccessComponent },
   { path: 'welcome', component: WelcomeComponent },
-  { path: 'skills', component: SkillsComponent }
+  { path: 'skills', component: SkillsComponent },
+  { path: 'baby', component: BabyNamesComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,31 @@
+<div class="names-sort-container">
+
+    <div class="names-sort">
+        <ul>
+            <h2>Jungen Namen</h2>
+            <li *ngFor="boyName of boyNames; let i = index; first as First">{{ boyNames[i] }}</li>
+        </ul>
+        <div class="add-name">
+            <label for="boys">
+                Bitte Namen eingeben:<br>
+                <input name="boys" type="text">
+            </label>
+            <button>Hinzufügen</button>
+        </div>
+    </div>
+
+    <div class="names-sort">
+        <ul>
+            <h2>Mädchen Namen</h2>
+            <li *ngFor="girlName of girlNames; let i = index; first as First">{{ girlNames[i] }}</li>
+        </ul>
+        <div class="add-name">
+            <label for="girls">
+                Bitte Namen eingeben:<br>
+                <input name="girls" type="text">
+            </label>
+            <button>Hinzufügen</button>
+        </div>
+    </div>
+
+</div>

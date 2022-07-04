@@ -1,0 +1,20 @@
+.names-sort-container{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: calc(100vh - 350px);
+}
+
+.names-sort{
+    
+}
+
+.add-name{
+    display: flex;
+    flex-direction: column;
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}

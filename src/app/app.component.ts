@@ -46,7 +46,7 @@ export class AppComponent {
       let checkedClass = classesToCheck;
   
       const kofiguration = {
-        threshold: [0, 0.75, 1]//"0" ist der Standartwert, 0.75 gibt an wie viel prozent sichtbar sein sollen(hier 75%).
+        threshold: [0.5, 0.75]//"0" ist der Standartwert, 0.75 gibt an wie viel prozent sichtbar sein sollen(hier 75%).
       };
   
       const observer = new IntersectionObserver(
@@ -63,7 +63,7 @@ export class AppComponent {
                 element.target.classList.remove('my-skills-animationOut');
               }
 
-            } else if(element.intersectionRatio < 0.75){
+            } else if(element.intersectionRatio < 0.5){
                 if(componentName == '.rect'){ //my skills
                   element.target.classList.remove('animationSlideIn');//hinzufügen der klasse "sichtbar", welche die Animation beinhaltet.
                 element.target.classList.add('animationSlideOut');
